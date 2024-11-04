@@ -1,0 +1,30 @@
+.home-container {
+    min-height: 100vh; /* vh unit is based on the height of the viewport */
+    width: 100%; /* Ensure it covers the full width */
+    background-image: url('../../assets/images/blå2.jpg'); /* Ensure this is the correct path to your image */
+    background-size: cover; /* Cover ensures that the background covers the whole container */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+  
+  .home-container h1,
+  .home-container p {
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+  }
+  
+  .section-heading {
+    padding-top: 150px;
+    padding-left: 120px;
+    color: white; 
+  }
+  
+  .section-content {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-left: 500px; 
+    color: white;
+  }
+  

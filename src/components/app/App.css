@@ -1,0 +1,128 @@
+/* Global Styles */
+:root {
+  --navbar-bg-color: #64c5f0; /* Specific color for the navbar */
+  --link-color: #ebe8f2;      /* Light color for links */
+  --link-hover-color: #c2befd; /* Lighter purple for hover state */
+}
+
+.App {
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(100, 197, 240, 0.7), rgba(100, 197, 240, 0.7)), url('/src/assets/images/new_image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgba(20, 85, 215, 0.5); /* Semi-transparent overlay */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-bg-color); /* Use the color variable */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Manager Dashboard Styling */
+.manager-dashboard {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9; /* Light gray background for the dashboard area */
+}
+
+.manager-dashboard h2 {
+  color: #333; /* Dark grey for text */
+  font-size: 24px; /* Slightly larger font size for visibility */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+button {
+  background-color: #64c5f0; /* Light blue background, matching your theme */
+  color: white; /* White text for contrast */
+  border: none; /* No border for a modern look */
+  border-radius: 20px; /* Rounded corners for the buttons */
+  padding: 10px 20px; /* Padding for button size */
+  margin: 10px; /* Margin around buttons for spacing */
+  cursor: pointer; /* Cursor indicates button */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  outline: none; /* Removes the outline to keep the style clean */
+}
+
+button:hover {
+  background-color: #52a8d8; /* A darker shade of blue for hover */
+  transform: scale(1.05); /* Slightly enlarges the button when hovered */
+}
+
+button:focus {
+  outline: 2px solid #4169e1; /* Adds an outline when the button is focused for accessibility */
+}
+
+@media (max-width: 768px) {
+  .manager-dashboard h2 {
+    font-size: 20px; /* Smaller font size for smaller devices */
+  }
+
+  button {
+    padding: 8px 16px; /* Smaller buttons on smaller devices */
+  }
+}

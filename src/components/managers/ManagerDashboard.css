@@ -1,0 +1,44 @@
+/* Manager Dashboard Styling */
+.manager-dashboard {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;  /* Light gray background for the dashboard area */
+  }
+  
+  .manager-dashboard h2 {
+    color: #333;  /* Dark grey for text */
+    font-size: 24px;  /* Slightly larger font size for visibility */
+    margin-bottom: 20px;  /* Space below the header */
+  }
+  
+  button {
+    background-color: #64c5f0;  /* Light blue background, matching your theme */
+    color: white;  /* White text for contrast */
+    border: none;  /* No border for a modern look */
+    border-radius: 20px;  /* Rounded corners for the buttons */
+    padding: 10px 20px;  /* Padding for button size */
+    margin: 10px;  /* Margin around buttons for spacing */
+    cursor: pointer;  /* Cursor indicates button */
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition for hover effects */
+    outline: none;  /* Removes the outline to keep the style clean */
+  }
+  
+  button:hover {
+    background-color: #52a8d8;  /* A darker shade of blue for hover */
+    transform: scale(1.05);  /* Slightly enlarges the button when hovered */
+  }
+  
+  button:focus {
+    outline: 2px solid #4169e1;  /* Adds an outline when the button is focused for accessibility */
+  }
+  
+  @media (max-width: 768px) {
+    .manager-dashboard h2 {
+      font-size: 20px;  /* Smaller font size for smaller devices */
+    }
+  
+    button {
+      padding: 8px 16px;  /* Smaller buttons on smaller devices */
+    }
+  }
+  

@@ -1,0 +1,89 @@
+/* Mission Component Styles */
+.mission-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* You might consider a more modern font like 'Roboto' */
+    background-color: #f4f4f9; /* Light background to keep it fresh */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin: auto;
+    width: 90%;
+    max-width: 960px;
+}
+
+.mission-header {
+    color: #2a5298; /* A deep blue for seriousness */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mission-buttons {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #64c5f0; /* Matching the navbar color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.1s ease-in-out;
+}
+
+.button:hover {
+    background-color: #52a8d8; /* Darker shade for hover */
+    transform: scale(1.05);
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.select-company {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-field, .select-company select {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.input-label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.mission-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.mission-table th, .mission-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.mission-table th {
+    background-color: #e0f0ff;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,17 @@
+/* Styles for the container of the consultants */
+.consults-container {
+    /* You might want to add styles here similar to what was intended for .managers-container */
+}
+
+/* Styles for the grid container that holds all grid items */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define columns to autofill the space, with each column having a minimum width of 250px and a flexible maximum */
+    gap: 20px; /* 20px gap between each grid item */
+}
+
+/* Styles for individual grid items, each representing a consultant */
+.grid-item {
+    border: 1px solid #ccc; /* Light grey border around each grid item */
+    padding: 10px; /* Padding inside each grid item */
+}
